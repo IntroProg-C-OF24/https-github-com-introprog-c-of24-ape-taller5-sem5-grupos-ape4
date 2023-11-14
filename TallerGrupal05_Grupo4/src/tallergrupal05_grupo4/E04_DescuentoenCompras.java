@@ -10,14 +10,14 @@ import java.util.Scanner;
 public class E04_DescuentoenCompras {
     public static void main(String[] args) {
         Scanner tc = new Scanner(System.in);
-        double precioProducto, descuento = 0;
-        System.out.println("A continuacion ingresa el precio del producto");
-        precioProducto = tc.nextDouble();
-        if (precioProducto > 100){
-            descuento = precioProducto * 0.1;
-            precioProducto = precioProducto - descuento;
+        double precio, descuento = 0;
+        System.out.println("Precio del producto: ");
+        precio = tc.nextDouble();
+        if (precio > 100){
+            descuento = precio * 0.1;
+            precio = precio - descuento;
             System.out.println("Descuento: $" + descuento);
         } 
-        System.out.println("Total: $" + precioProducto);
+        System.out.println("Total: $" + precio);
     }
 }

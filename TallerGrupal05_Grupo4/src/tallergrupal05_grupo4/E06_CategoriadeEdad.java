@@ -10,17 +10,17 @@ import java.util.Scanner;
 public class E06_CategoriadeEdad {
     public static void main(String[] args) {
         Scanner tc = new Scanner(System.in);
-        int edadUser;
-        System.out.println("A continuacion ingresa tu edad");
-        edadUser = tc.nextInt();
-        if (edadUser >= 0 && edadUser <= 150)
-            if(edadUser >= 18)
-                System.out.println("Eres adulto");
+        int edad;
+        System.out.println("Ingresa tu edad: ");
+        edad = tc.nextInt();
+        if (edad >= 0 && edad <= 150)
+            if(edad >= 18)
+                System.out.println("Eres un adulto");
             else 
-                if(edadUser >= 12)
-                    System.out.println("Eres adolescente");
+                if(edad >= 12)
+                    System.out.println("Eres un adolescente");
                 else
-                    System.out.println("Eres nino");
+                    System.out.println("Eres un nino");
         else
             System.out.println("El numero ingresado es incorrecto");
     }

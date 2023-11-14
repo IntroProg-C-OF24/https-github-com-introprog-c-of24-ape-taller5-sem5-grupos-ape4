@@ -10,10 +10,10 @@ import java.util.Scanner;
 public class E02_DiadelaSemana {
     public static void main(String[] args) {
         Scanner tc = new Scanner(System.in);
-        int numero;
-        System.out.println("A continuacion ingresa un numero del 1 al 7");
-        numero = tc.nextInt();
-        switch (numero){
+        int num;
+        System.out.println("Ingresa un numero del 1 al 7");
+        num = tc.nextInt();
+        switch (num){
             case 1: 
                 System.out.println("1 -> LUNES");
                 break;

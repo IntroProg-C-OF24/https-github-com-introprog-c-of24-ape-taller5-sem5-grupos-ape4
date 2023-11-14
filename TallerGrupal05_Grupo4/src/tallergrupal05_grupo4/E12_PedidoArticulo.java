@@ -12,20 +12,20 @@ public class E12_PedidoArticulo {
     public static void main(String[] args) {
         Scanner tc = new Scanner(System.in);
         String articulo;
-        double costoProducto, unidades, total, descuento = 0;
-        System.out.println("Ingresa el nombre del articulo que pediste");
+        double costo, unidades, total, descuento = 0;
+        System.out.println("Ingresa el nombre del articulo");
         articulo = tc.nextLine();
-        System.out.println("Ingresa la cantidad de unidades que pediste");
+        System.out.println("Ingresa la cantidad de unidades");
         unidades = tc.nextDouble();
         System.out.println("Ingresa el costo del producto");
-        costoProducto = tc.nextDouble();
-        total = costoProducto * unidades;
+        costo = tc.nextDouble();
+        total = costo * unidades;
         if (unidades > 50){
             descuento = total * 0.15;
             total = total - descuento;
         }
-        System.out.println("*************************************");
-        System.out.println("COSTO POR UNIDAD DE: " + articulo + ": $" + costoProducto);
+        System.out.println("==========================================");
+        System.out.println("COSTO POR UNIDAD DE: " + articulo + ": $" + costo);
         System.out.println("DESCUENTO: $" + descuento);
         System.out.println("UNIDADES: " + unidades);
         System.out.println("TOTAL: $" + total);

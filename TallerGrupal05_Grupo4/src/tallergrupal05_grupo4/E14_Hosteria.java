@@ -13,13 +13,13 @@ public class E14_Hosteria {
     public static void main(String[] args) {
         Scanner tc = new Scanner(System.in);
         int dias;
-        double costoporDia, descuento, subtotal, total;
-        System.out.println("A continuacion ingresa el numero de dias que te hospedaste:");
+        double costoPorDia, descuento, subtotal, total;
+        System.out.println("Ingresa el numero de dias que te hospedaste:");
         dias = tc.nextInt();
         System.out.println("Ingresa el valor del costo por dia de tu habitacion:");
-        costoporDia = tc.nextDouble();
-        subtotal = dias * costoporDia;
-        total = dias * costoporDia;
+        costoPorDia = tc.nextDouble();
+        subtotal = dias * costoPorDia;
+        total = dias * costoPorDia;
         descuento = 0;
         if (dias > 15){
             descuento = total * 0.2;
@@ -37,7 +37,7 @@ public class E14_Hosteria {
                 }
             }
         }
-        System.out.println("***************************");
+        System.out.println("==========================");
         System.out.println("SUBTOTAL: " + subtotal);
         System.out.println("DESCUENTO: " + descuento);
         System.out.println("TOTAL: " + total);
